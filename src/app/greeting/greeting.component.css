@@ -1,0 +1,16 @@
+h3 {
+color: blueviolet;
+}
+h1 {
+    color: aquamarine;
+}
+.text-color {
+color: blue;
+background-color:yellow;
+
+}
+.text-bgcolor{
+    color: green;
+    background-color:pink;
+   
+}

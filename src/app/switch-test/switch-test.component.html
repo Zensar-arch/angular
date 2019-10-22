@@ -1,0 +1,11 @@
+<p>switch-test works!</p>
+<div>
+    <input placeholder="Enter your age" [(ngModel)]="age">
+
+</div>
+<div [ngSwitch]="age">
+    <h2 *ngSwitchCase="'2'">You got admission to Play School</h2>
+    <h2 *ngSwitchCase="'3'">You got admission to Junior kg</h2>
+    <h2 *ngSwitchCase="'4'">You got admission to Senior Kg</h2>
+    <h2 *ngSwitchDefault>Sorry !!! no admission to  School</h2>
+</div>

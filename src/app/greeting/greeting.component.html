@@ -1,0 +1,20 @@
+<h2 appColor>{{message}}</h2>
+
+<h3 class="text-color" class="text-bgcolor">Welcome to Greeting component</h3>
+<h1 [class]="textColor">{{message}}</h1>
+<h2 [ngClass]="['text-color','text-bgcolor']">{{message}}</h2>
+<h2 [ngClass]="[textColor,textBgColor]">{{message}}</h2><!--using [ngClass] directive we can declare multiple properties -->
+<h2 [ngClass]="greetingStyle">{{message}}</h2>
+<h2 [ngStyle]="{'color':'red','background-color':'blue'}">{{message}}</h2>
+
+<app-product-list></app-product-list>
+<h1>{{message}}</h1>
+<button (click)="sayGreet($event)">Greet</button>
+<div>
+<h2 [ngStyle]="{'color':getFgColor(),'background-color':getBgColor()}">HAPPY DIWALI!!!</h2>
+
+
+<button class="btn btn-primary" (click)="toggleColor()" [ngStyle]="{'color':getFgColor(),'background-color':getBgColor()}">Toggle</button></div>
+<h1 [class]="textColor">{{message|uppercase}}</h1>
+<h2 [ngStyle]="{'color':'red','background-color':'blue'}">{{message|lowercase}}</h2>
+<h2 [ngStyle]="{'color':'red','background-color':'blue'}">{{message|titlecase}}</h2>
